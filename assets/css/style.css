@@ -1,0 +1,143 @@
+/* variables */
+:root {
+    --primary-color-purple: #ff00ea;
+}
+
+/* general */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0 auto;
+    background-color: #FFF;
+    font-family: sans-serif;
+}
+
+main {
+    margin-top: 60px;
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+input {
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* header */
+header {
+    position: relative;
+}
+
+#viewHighScoresButton {
+    color: var(--primary-color-purple);
+    background: none;
+    border: none;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px;
+}
+
+#viewHighScoresButton:focus {
+    outline: none;
+}
+
+header p {
+    color: black;
+    font-size: 16px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+#lastQuestionResult {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 5px solid #E5E5E5;
+    font-size: 18px;
+    color: #E5E5E5;
+}
+
+.subHeading {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.heading {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.text {
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.primaryButton {
+    cursor: pointer;
+    color: #FFF;
+    background-color: var(--primary-color-purple);
+    border: 1px solid var(--primary-color-purple);
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-size: 15px;
+}
+
+.highscoresList {
+    margin-bottom: 25px;
+}
+
+.highscoresList li {
+    background-color: #EEE7FB;
+    line-height: 1.4;
+    margin: 5px 0;
+    padding: 2px;
+}
+
+button:hover {
+    opacity: .8;
+}
+
+.primaryButton:focus,
+input:focus {
+    border: 1px solid blue;
+}
+
+.ml-5 {
+    margin-left: 5px;
+}
+
+.mb-5 {
+    margin-bottom: 5px;
+}
+
+.text-center {
+    text-align: center
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/* media queries */
+@media (max-width: 520px) {
+    main {
+        padding: 0 15px;
+    }
+}
